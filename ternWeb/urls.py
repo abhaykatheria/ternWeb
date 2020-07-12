@@ -18,5 +18,7 @@ from django.urls import path
 from tern import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index),  
+    path('', views.index, name='index'),
+    path('d/',views.dockerfile, name='dockerfile'),
+    path('i/',views.image, name='image'),  
 ]
